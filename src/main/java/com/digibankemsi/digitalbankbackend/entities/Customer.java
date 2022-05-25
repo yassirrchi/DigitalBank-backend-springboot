@@ -15,6 +15,6 @@ public class Customer {
     private String id;
     private String name;
     private String email;
-    @OneToMany(mappedBy ="customer")
+    @OneToMany(mappedBy ="customer",fetch = FetchType.EAGER)
     private List<BankAccount> bankAccounts;
 }
