@@ -34,5 +34,14 @@ DigitalBank-backend-springboot
 
 ![VID-20220525-211600](https://user-images.githubusercontent.com/65183563/170386422-ec82d101-5547-4569-af7a-1ecc4c3c0782.gif)
 
+![22222222](https://user-images.githubusercontent.com/65183563/170387090-1fb55113-e25a-4228-8528-56b0ed734681.PNG)
+
+![3333333](https://user-images.githubusercontent.com/65183563/170387100-fe41beb1-feb7-4e66-a8fd-4f40cbb04151.PNG)
+
+![4444444](https://user-images.githubusercontent.com/65183563/170387119-1ae2b4e1-3445-4b2c-8b05-53d84a785dc5.PNG)
+
+![VID-20220526-003803](https://user-images.githubusercontent.com/65183563/170386896-131fd47a-8e6b-4bd4-b013-5ba994b61972.gif)
+
+
 
 
