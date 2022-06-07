@@ -1,7 +1,6 @@
 package com.digibankemsi.digitalbankbackend.entities;
 
 import com.digibankemsi.digitalbankbackend.enums.AccountStatus;
-import com.digibankemsi.digitalbankbackend.entities.Customer;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -24,7 +23,7 @@ public abstract class BankAccount {
     private AccountStatus status;
     @ManyToOne
     private Customer customer;
-    @OneToMany(mappedBy = "bankAccount",fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "bankAccount",fetch = FetchType.EAGER,cascade=CascadeType.REMOVE)
     private List<AccountOperation> accountOperations;
 
 }
