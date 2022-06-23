@@ -197,4 +197,11 @@ Customer savedCustomer =customerRepo.save(customer);
 
         return null;
     }
+
+    @Override
+    public List<CustomerDTO> searchCustomer(String keyword) {
+        List<Customer> customers=customerRepo.searchCustomer(keyword);
+        List<CustomerDTO> customerDTOS=customers.stream().map(cust->bankAccountMapper.fromCustomer(cust)).collect(Collectors.toList());
+        return customerDTOS;
+    }
 }
