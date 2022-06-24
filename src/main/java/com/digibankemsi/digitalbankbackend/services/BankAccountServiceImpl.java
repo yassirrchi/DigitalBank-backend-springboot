@@ -33,13 +33,14 @@ public class BankAccountServiceImpl implements BankAccountService {
     private BankAccountMapper bankAccountMapper;
 
     @Override
-    public void transfer(String senderAccountId, String recieverAccountId, double amount) throws BankAccountNotFoundException, BalanceNotSufficentException {
+    public void transfer(String senderAccountId, String recieverAccountId, double amount,String description) throws BankAccountNotFoundException, BalanceNotSufficentException {
 debit(senderAccountId,amount,"transer to "+recieverAccountId);
 credit(recieverAccountId,amount,"Transfer from "+senderAccountId);
     }
 
     @Override
     public void debit(String accountId, double amount, String motif) throws BankAccountNotFoundException, BalanceNotSufficentException {
+
         BankAccount bankAccount= bankAccountRepo.findById( accountId).orElseThrow(()-> new BankAccountNotFoundException("no"));
         if(bankAccount.getBalance()<amount)
             throw new BalanceNotSufficentException("balance not sufficient");
@@ -179,7 +180,7 @@ Customer savedCustomer =customerRepo.save(customer);
     }
 
     @Override
-    public List<AccountHistoryDTO> getBankAccountHistory(String id, int page, int size) throws BankAccountNotFoundException {
+    public AccountHistoryDTO getBankAccountHistory(String id, int page, int size) throws BankAccountNotFoundException {
         BankAccount bankAccount=bankAccountRepo.findById(id).orElse(null);
         if(bankAccount==null)
             throw new BankAccountNotFoundException("bank acc not found");
@@ -195,7 +196,7 @@ Customer savedCustomer =customerRepo.save(customer);
         accountHistoryDTO.setTotalPages(accountOperations.getTotalPages());
 
 
-        return null;
+        return accountHistoryDTO;
     }
 
     @Override
