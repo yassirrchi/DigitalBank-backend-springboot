@@ -1,6 +1,9 @@
  # all apis
  ![30](https://user-images.githubusercontent.com/65183563/175728924-e045c8e2-9ddb-43b7-9a51-33dc2b8c49e4.PNG)
  
+ ## You can check the frontend part on [this repo](https://github.com/yassirrchi/DigitalBank-frontend-angular)
+
+ 
  ## customer controller
  
  ![34](https://user-images.githubusercontent.com/65183563/175730690-d2e245bc-a851-4228-a9eb-acac9d69d844.PNG)
