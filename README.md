@@ -1,47 +1,38 @@
-# DigitalBank-backend-springboot
-DigitalBank-backend-springboot
+ # all apis
+ ![30](https://user-images.githubusercontent.com/65183563/175728924-e045c8e2-9ddb-43b7-9a51-33dc2b8c49e4.PNG)
+ 
+ ## customer controller
+ 
+ ![34](https://user-images.githubusercontent.com/65183563/175730690-d2e245bc-a851-4228-a9eb-acac9d69d844.PNG)
 
+## bankaccount controller
 
-![1](https://user-images.githubusercontent.com/65183563/170383099-84079d3a-78b0-40da-8db6-dbef05410600.PNG)
+![35](https://user-images.githubusercontent.com/65183563/175731960-0e29d051-0c98-4c0e-877a-32dd3f4ee871.PNG)
 
-![2](https://user-images.githubusercontent.com/65183563/170383136-fb017dcb-45f4-4ad6-84af-ff7afe631de3.PNG)
+## all services
 
-![3](https://user-images.githubusercontent.com/65183563/170383153-ff515aa8-6782-4356-8d0f-d329e6a51f2b.PNG)
+![36](https://user-images.githubusercontent.com/65183563/175733231-7f6aa7d0-331f-481a-8aa2-ca7982e3987f.PNG)
 
-![4](https://user-images.githubusercontent.com/65183563/170383178-0885998c-8c71-4baa-bc46-c89132234c5c.PNG)
+![37](https://user-images.githubusercontent.com/65183563/175733525-234a8712-6445-4133-a37c-1f932333efac.PNG)
 
-![5](https://user-images.githubusercontent.com/65183563/170383208-18d256ac-6dad-4b87-ade1-6c017455481b.PNG)
+![38](https://user-images.githubusercontent.com/65183563/175733773-2a40b08a-a07c-457f-8c4b-4fbf78e60de0.PNG)
 
-![6](https://user-images.githubusercontent.com/65183563/170383227-0cfb47a7-8305-4621-bb5c-0fdfeee8e688.PNG)
+![39](https://user-images.githubusercontent.com/65183563/175733987-e33a8460-f41c-47a5-bdb9-5278fef52573.PNG)
 
+![40](https://user-images.githubusercontent.com/65183563/175734221-01c99678-3ccb-4fb0-abf8-683b0af13a9e.PNG)
 
-![sing-tb](https://user-images.githubusercontent.com/65183563/170385529-ccd0e8e2-3fb1-442e-9b71-35ebcf97d6e8.gif)
+![41](https://user-images.githubusercontent.com/65183563/175734468-58c890fc-02e9-45c9-b28a-47e1c1b500a9.PNG)
 
+![42](https://user-images.githubusercontent.com/65183563/175734754-55d81c43-4cde-401c-8579-4fb7225cbbfa.PNG)
 
-![7](https://user-images.githubusercontent.com/65183563/170383241-8bd4e2e1-ba0b-4e11-8e53-57bdf8d34d41.PNG)
+## bankaccountOperations repo
 
-![8](https://user-images.githubusercontent.com/65183563/170383250-ffed25df-e875-4085-94af-332650f3e348.PNG)
+![44](https://user-images.githubusercontent.com/65183563/175743352-6de94d34-6b8a-4544-aebb-3a18903bb9f5.PNG)
 
-![9](https://user-images.githubusercontent.com/65183563/170383259-e67693fd-fccf-4662-af13-508e518b5445.PNG)
+## bankaccount repo
 
-![meth2](https://user-images.githubusercontent.com/65183563/170385754-9d0dbe43-2ead-4001-8a5f-b56e55219bac.gif)
+![45](https://user-images.githubusercontent.com/65183563/175744381-1caba483-99d2-4938-967b-1f14572fd679.PNG)
 
-![10](https://user-images.githubusercontent.com/65183563/170383267-a6c6873e-d270-4737-a5bf-dd56b06f5d51.PNG)
+## customer repo
 
-![afterabstract](https://user-images.githubusercontent.com/65183563/170385786-1593bb27-18ae-463f-87a5-6a17c9d1621b.gif)
-
-![1111](https://user-images.githubusercontent.com/65183563/170386238-e8de7caf-15b9-4579-a893-2b5bfd02abe4.PNG)
-
-![VID-20220525-211600](https://user-images.githubusercontent.com/65183563/170386422-ec82d101-5547-4569-af7a-1ecc4c3c0782.gif)
-
-![22222222](https://user-images.githubusercontent.com/65183563/170387090-1fb55113-e25a-4228-8528-56b0ed734681.PNG)
-
-![3333333](https://user-images.githubusercontent.com/65183563/170387100-fe41beb1-feb7-4e66-a8fd-4f40cbb04151.PNG)
-
-![4444444](https://user-images.githubusercontent.com/65183563/170387119-1ae2b4e1-3445-4b2c-8b05-53d84a785dc5.PNG)
-
-![VID-20220526-003803](https://user-images.githubusercontent.com/65183563/170386896-131fd47a-8e6b-4bd4-b013-5ba994b61972.gif)
-
-
-
-
+![46](https://user-images.githubusercontent.com/65183563/175745111-f4052457-6504-4421-bc81-878ea0267502.PNG)
