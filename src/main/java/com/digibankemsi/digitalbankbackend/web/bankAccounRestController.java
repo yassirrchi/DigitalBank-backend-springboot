@@ -51,9 +51,11 @@ public AccountHistoryDTO getbankAccountHistory(@PathVariable  String id, @Reques
     }
     @PostMapping("/accounts/transfer")
     public void transfer(@RequestBody TransferRequestDTO transferRequestDTO ) throws BankAccountNotFoundException, BalanceNotSufficentException {
+        System.out.println(transferRequestDTO.getAccountSource()+""+transferRequestDTO.getAccountSource());
         this.bankAccountService.transfer(transferRequestDTO.getAccountSource(),transferRequestDTO.getAccountDestination(),transferRequestDTO.getAmount(),transferRequestDTO.getDescription());
 
 
 
     }
+
 }

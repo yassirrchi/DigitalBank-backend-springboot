@@ -184,7 +184,7 @@ Customer savedCustomer =customerRepo.save(customer);
         BankAccount bankAccount=bankAccountRepo.findById(id).orElse(null);
         if(bankAccount==null)
             throw new BankAccountNotFoundException("bank acc not found");
-        Page<AccountOperation> accountOperations=accountOperationRepo.findByBankAccountId(id, PageRequest.of(page,size));
+        Page<AccountOperation> accountOperations=accountOperationRepo.findByBankAccountIdOrderByOperationDateDesc(id, PageRequest.of(page,size));
         AccountHistoryDTO accountHistoryDTO=new AccountHistoryDTO();
 
         List<AccountOperationDTO> accountOperationDTOList=accountOperations.getContent().stream().map(op->bankAccountMapper.fromAccountOperation(op)).collect(Collectors.toList());
@@ -205,4 +205,13 @@ Customer savedCustomer =customerRepo.save(customer);
         List<CustomerDTO> customerDTOS=customers.stream().map(cust->bankAccountMapper.fromCustomer(cust)).collect(Collectors.toList());
         return customerDTOS;
     }
+    @Override
+    public List<BankAccount> getCustomerBankAccounts(String id){
+
+        List<BankAccount> BankAccList= this.bankAccountRepo.findBankAccountsByCustomerId(id);
+
+
+        return  BankAccList;
+
+     }
 }

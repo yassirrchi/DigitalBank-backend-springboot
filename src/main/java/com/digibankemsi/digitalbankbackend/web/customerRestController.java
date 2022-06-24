@@ -1,7 +1,10 @@
 package com.digibankemsi.digitalbankbackend.web;
 
+import com.digibankemsi.digitalbankbackend.dtos.BankAccountDTO;
 import com.digibankemsi.digitalbankbackend.dtos.CustomerDTO;
+import com.digibankemsi.digitalbankbackend.entities.BankAccount;
 import com.digibankemsi.digitalbankbackend.entities.Customer;
+import com.digibankemsi.digitalbankbackend.exceptions.BankAccountNotFoundException;
 import com.digibankemsi.digitalbankbackend.exceptions.CustomerNotFoundException;
 import com.digibankemsi.digitalbankbackend.repositories.BankAccountRepo;
 import com.digibankemsi.digitalbankbackend.services.BankAccountService;
@@ -44,5 +47,12 @@ return bankAccountService.updateCustomer(customerDTO);
     @DeleteMapping("/customers/{id}")
     public void deleteCust(@PathVariable(name = "id") String id){
         bankAccountService.deleteCustomer(id);
+    }
+
+    @GetMapping("/customer/accounts/{id}")
+    public List<BankAccount> getCustomerBankAccounts(@PathVariable String id) throws BankAccountNotFoundException {
+        System.out.println("hey"+id);
+        return bankAccountService.getCustomerBankAccounts(id);
+
     }
 }

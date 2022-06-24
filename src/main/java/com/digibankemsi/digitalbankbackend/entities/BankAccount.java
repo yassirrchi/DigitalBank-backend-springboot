@@ -1,6 +1,7 @@
 package com.digibankemsi.digitalbankbackend.entities;
 
 import com.digibankemsi.digitalbankbackend.enums.AccountStatus;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,8 +23,11 @@ public abstract class BankAccount {
     @Enumerated(EnumType.STRING)
     private AccountStatus status;
     @ManyToOne
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Customer customer;
     @OneToMany(mappedBy = "bankAccount",fetch = FetchType.EAGER,cascade=CascadeType.REMOVE)
+
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private List<AccountOperation> accountOperations;
 
 }
